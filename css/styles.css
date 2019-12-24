@@ -2,8 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two|Raleway);
 
 body {
-  background: #fff;
-  color: #333;
+  background: #fff3ef;
+  color: #876161;
   font-family: 'Raleway', sans-serif;
 }
 .container {
@@ -44,7 +44,7 @@ button {
 button:hover {
   color: #333;
 }
-/* Heading */
+
 h3,
 label[for='new-task'] {
   color: #333;
@@ -71,7 +71,6 @@ input[type="text"]:focus {
   color: #333;
 }
 
-/* New Task */
 label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
@@ -84,7 +83,6 @@ p > button:hover {
   color: #0FC57C;
 }
 
-/* Task list */
 li {
   overflow: hidden;
   padding: 20px 0;
@@ -108,21 +106,17 @@ li > .delete:hover {
   color: #CF2323;
 }
 
-/* Completed */
 #completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
-ul li input[type=text] {
-  display:none;
+i.fa.fa-check{
+  font-size: 20px;
 }
 
-ul li.editMode input[type=text] {
-  display:block;
-}
-
-ul li.editMode label {
-  display:none;
+i.fa.fa-trash{
+  font-size: 20px;
+  position: relative;
+  left: 165%;
 }

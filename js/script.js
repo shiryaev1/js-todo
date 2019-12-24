@@ -3,7 +3,6 @@ const ADD_BUTTON = document.querySelector("button");
 const INCOMPLETE_TASKS_HOLDER = document.getElementById("incomplete-tasks");
 const COMPLETED_TASKS_HOLDER = document.getElementById("completed-tasks");
 
-
 let createNewTaskElement = (taskString) => {
 	let listItem = document.createElement("li");
 
@@ -28,7 +27,7 @@ let createNewTaskElement = (taskString) => {
 	return listItem;
 };
 
-let addTask = function() {
+let addTask = () => {
     if (TASK_INPUT.value) {
       let listItem = createNewTaskElement(TASK_INPUT.value);
       INCOMPLETE_TASKS_HOLDER.appendChild(listItem);
@@ -39,13 +38,10 @@ let addTask = function() {
 };
 
 let deleteTask = function() {
-
 	let listItem = this.parentNode;
 	let ul = listItem.parentNode;
 	ul.removeChild(listItem);
 };
-
-
 
 let tasksCompleted = function() {
 	let listItem = this.parentNode;
@@ -59,7 +55,7 @@ let tasksIncomplete = function() {
 	bindTaskEvents(listItem, tasksCompleted);
 };
 
-let bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
+let bindTaskEvents = (taskListItem, checkBoxEventHandler) => {
 	let checkBox = taskListItem.querySelector("input[type=checkbox]");
 	let deleteButton = taskListItem.querySelector("button.btn");
 
@@ -67,9 +63,13 @@ let bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
 	checkBox.onchange = checkBoxEventHandler;
 };
 
-
 ADD_BUTTON.onclick = addTask;
 
+TASK_INPUT.addEventListener("keydown", event =>{
+	if (event.key === 'Enter' || event.keyCode === 13){
+		addTask();
+	}
+});
 
 for (let index = 0; index < INCOMPLETE_TASKS_HOLDER.children.length; index++) {
 	bindTaskEvents(INCOMPLETE_TASKS_HOLDER.children[index], tasksCompleted);
