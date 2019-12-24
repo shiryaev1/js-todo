@@ -1,4 +1,3 @@
-
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two|Raleway);
 
 body {
@@ -6,6 +5,7 @@ body {
   color: #876161;
   font-family: 'Raleway', sans-serif;
 }
+
 .container {
   display: block;
   width: 400px;
@@ -21,9 +21,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 li * {
   float: left;
 }
+
 li, h3 {
   clear:both;
   list-style:none;
@@ -39,6 +41,7 @@ label[for='new-task'] {
   margin: 0;
   text-transform: uppercase;
 }
+
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -51,6 +54,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 input[type="text"]:focus {
   color: #333;
 }
@@ -59,10 +63,12 @@ label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
 }
+
 input#new-task {
   float: left;
   width: 318px;
 }
+
 p > button:hover {
   color: #0FC57C;
 }
@@ -77,15 +83,18 @@ li > input[type="checkbox"] {
   position: relative;
   top: 15px;
 }
+
 li > label {
   font-size: 18px;
   line-height: 40px;
   width: 237px;
   padding: 0 0 0 11px;
 }
+
 li >  input[type="text"] {
   width: 226px;
 }
+
 li > .delete:hover {
   color: #CF2323;
 }

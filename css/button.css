@@ -1,6 +1,7 @@
 input, button {
   outline: none;
 }
+
 button {
   background: none;
   border: 0px;
@@ -11,9 +12,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 button:hover {
   color: #333;
 }
+
 i.fa.fa-check{
   font-size: 20px;
 }
