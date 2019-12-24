@@ -1,0 +1,25 @@
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+i.fa.fa-check{
+  font-size: 20px;
+}
+
+i.fa.fa-trash{
+  font-size: 20px;
+  position: relative;
+  left: 165%;
+}

@@ -1,4 +1,5 @@
 import '../css/styles.css';
+import '../css/button.css';
 
 const TASK_INPUT = document.getElementById("new-task");
 const ADD_BUTTON = document.querySelector("button");
