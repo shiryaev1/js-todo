@@ -2,23 +2,19 @@
   "name": "js_todo",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
-  "dependencies": {},
-  "devDependencies": {
-    "http-server": "^0.12.0"
-  },
+  "main": "js/script.js",
   "scripts": {
+    "webpack": "webpack -w",
+    "dev": "npm run webpack -- --mode development --watch",
+    "build": "npm run webpack -- --mode production",
     "start": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shiryaev1/js-todo.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shiryaev1/js-todo/issues"
-  },
-  "homepage": "https://github.com/shiryaev1/js-todo#readme"
+  "devDependencies": {
+    "http-server": "^0.12.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
 }
