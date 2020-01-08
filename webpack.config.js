@@ -8,7 +8,7 @@ module.exports = {
     entry: './js/script.js',
     output: {
         filename: "main.js",
-        path: path.join(__dirname, 'out')
+        path: path.join(__dirname, 'bundle')
     },
     module: {
       rules: [
@@ -34,7 +34,7 @@ module.exports = {
       ],
     },
     devServer: {
-        contentBase: './out'
+        contentBase: './bundle'
     },
     plugins: [
     new HtmlWebpackPlugin({template: './index.html'}),
